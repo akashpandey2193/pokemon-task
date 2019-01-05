@@ -62,5 +62,5 @@ export default {
       font-size 30px
       padding-bottom 8px
     >>>.desc
-      font-size 14px
+      font-size 12px
 </style>
