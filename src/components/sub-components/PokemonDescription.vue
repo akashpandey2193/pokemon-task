@@ -44,7 +44,7 @@ export default {
     width 100%
     height 100%
     position relative
-    padding 20px 0
+    padding 25px 0
     overflow hidden
     box-sizing border-box
   .background-text
