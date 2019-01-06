@@ -66,10 +66,12 @@ export default {
     max-height 600px
     width 300px
     background black
+    margin 10px
     box-sizing border-box
   @media only screen and (max-width: 600px)
     .main-container
       height 100vh
       width 100vw
+      margin 0
       max-height unset
 </style>

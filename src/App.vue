@@ -49,7 +49,7 @@ export default {
 </script>
 <style lang="stylus" scoped>
   #app
-    padding 60px
+    padding 40px 120px
   .flex
     display flex
     justify-content space-around

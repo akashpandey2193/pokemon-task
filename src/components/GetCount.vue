@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div>Please enter the pokemons to be called</div>
+    <div class="label">Please enter the pokemons to be called</div>
     <div class="input-container">
       <input v-model="totalCards" placeholder="Call pokemons">
       <span
@@ -33,6 +33,8 @@ export default {
     padding 8px
     display flex
     flex-wrap wrap
+    >>>.label
+      align-self center
     >>> input
       outline 0
       border none
@@ -43,7 +45,7 @@ export default {
   .button
     margin-left 12px
     background #33a0e8
-    padding 10px
+    padding 5px
     border-radius 4px
     cursor pointer
     box-shadow 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12)
