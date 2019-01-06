@@ -1,6 +1,9 @@
 <template>
   <div id="app">
     <div class="flex">
+      <get-count
+        @fetchPokemons="$_fetchPokemons"
+      />
       <div
         v-for="(item,index) in pokemonCards"
         :key="index">
@@ -17,11 +20,13 @@
 
 <script>
 import PokemonCard from './components/PokemonCard.vue'
+import GetCount from './components/GetCount.vue'
 import { mapGetters } from 'vuex'
 export default {
   name: 'app',
   components: {
-    PokemonCard
+    PokemonCard,
+    GetCount
   },
   data() {
     return {
@@ -32,8 +37,13 @@ export default {
       'pokemonCards'
     ])
   },
+  methods: {
+    $_fetchPokemons() {
+      this.$store.dispatch('fetchPokemonCards')
+    }
+  },
   mounted() {
-    this.$store.dispatch('fetchPokemonCards')
+    this.$_fetchPokemons()
   }
 }
 </script>
@@ -42,7 +52,7 @@ export default {
     padding 60px
   .flex
     display flex
-    justify-content space-between
+    justify-content space-around
     flex-wrap wrap
     box-sizing border-box
   @media only screen and (max-width: 600px)

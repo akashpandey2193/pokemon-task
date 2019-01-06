@@ -63,6 +63,7 @@ export default {
     display flex
     flex-direction column
     height 100vh
+    max-height 600px
     width 300px
     background black
     box-sizing border-box
@@ -70,4 +71,5 @@ export default {
     .main-container
       height 100vh
       width 100vw
+      max-height unset
 </style>
