@@ -52,7 +52,6 @@ export default {
     padding 40px 120px
   .flex
     display flex
-    justify-content space-around
     flex-wrap wrap
     box-sizing border-box
   @media only screen and (max-width: 600px)
